@@ -9,7 +9,7 @@ servers:
 paths:
   /pets:
     get:
-      summary: List all pets
+      summary: List all pets in petstore
       operationId: listPets
       tags:
         - pets
@@ -55,7 +55,7 @@ paths:
                 $ref: "#/components/schemas/Error"
   /pets/{petId}:
     get:
-      summary: Info for a specific pet
+      summary: Get Specific Pet Info
       operationId: showPetById
       tags:
         - pets
